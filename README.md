@@ -4,11 +4,12 @@ Lightweight blockchain analytics dashboard using publicly available or authorize
 
 ## Features
 
-- Network activity metrics
-- Transaction visualizations (extend with Plotly)
+- Multi-network activity metrics (Ethereum, Base, Polygon demos)
+- Transaction visualizations data preparation (ready for Plotly)
 - Wallet data exploration
-- Historical trends
+- Historical trends with simple trend analysis (direction, average, change %)
 - Clear source attribution
+- Basic unit tests and CI workflow
 
 Uses real data or clearly labeled demonstration datasets.
 
@@ -27,6 +28,7 @@ cp .env.example .env  # add RPC or API keys if needed
 
 ```bash
 python dashboard.py
+python -m unittest test_dashboard.py -v
 ```
 
 Output written to `output/analytics.json`. Extend to generate HTML/Plotly charts.
